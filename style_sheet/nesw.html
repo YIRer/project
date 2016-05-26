@@ -7,11 +7,12 @@
     <style type="text/css">
         
         *{margin:0; padding:0;}
-        
+        ul, ol{list-style-type: none;}
         .top .h_left
         {
             border:1px red solid;
             float: left;
+           
         
     
         }
@@ -19,6 +20,7 @@
         {
             border:1px red solid;
             float: right;
+            margin-bottom: 10px;
         
                     }
         
@@ -75,21 +77,6 @@
             margin-bottom:10px;
         }
         
-        .back .bottom .ct .lc .ta .pt1
-        {
-            outline:1px blue solid;
-            height:104px;
-            width: 140px;
-            margin:1px;
-            float:left;
-        }
-        .back .bottom .ct .lc .ta .at1
-        {
-            outline:1px green solid;
-            height:100%;
-            margin-left:160px;
-        }
-        
 
         .back .bottom .ct .lc .bta
         {
@@ -114,54 +101,19 @@
             outline:1px red solid;
             height:37px;
         }
-        .btal
-        {
-            outline:1px red solid;
-            width: 140px;
-            height: 252px;
-            float:left;
-          
-            
-        }
-        .btal .p1
-        {
-            outline:1px red solid;
-            height: 126px;
-            
-            
-        }
-    
-         .btal .p1 .fst
-        {
-            outline:1px green solid;
-            height: 83px;
-            
-        }
-                .btal .p2
-        {
-            outline:1px red solid;
-            height: 126px;
-            
-            
-        }
-    
-         .btal .p2 .sec
-        {
-            outline:1px green solid;
-            height: 83px;
-            
-        }
+      
+        .lc .ta ul{border 1px green solid;}
+        .lc .ta ul li {margin-left:150px;}
+        .lc .ta ul li.fsl {margin-left:0px;}
+        .lc .ta ul li.fsl strong{display:block;}
+        .lc .ta ul li.fsl span{font-size:12px; display:block; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+        .lc .ta ul li.fsl img{float:left; margin-right:10px;}
+        .lc .bta .patc{outline: 1px blue solid; width: 140px; height:100%; font-size:12px; text-align:center; float:left; }
+        .lc .bta ul{margin-left: 160px; font-size:16px;}
+        .lc .bta ul li.atc{font-size:14px; display:block; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
         
-        .btar 
-        {
-            outline:1px green solid;
-            margin-left:160px;
-            height:100%;
-            
-        }
         
-     
-    
+        .rc .trc img{float:left;}
     </style>
 
 
@@ -195,40 +147,54 @@
             <div class="ct">
                 <div class="lc">
                     <div class="ta">
-                        
-                        <div class="pt1"></div>
-                        <div class="at1"></div>
-                        
+                        <ul>
+                        <li class="fsl">
+                            
+                            <img src="http://static.naver.net/newsstand/2016/0526/inews/150458/001.jpg" alt="누구인지는 모르지만 대머리 아저씨">
+                            <strong>삼성 "퀀텀닷, 차세대 TV 화질 역사쓸 것"</strong>
+                            <span>장혁 삼성전자 종합기술원 부사장 '국제 퀀텀닷 컨퍼런스' 기조연설 나서</span>
+                         </li>   
+                        <li><a href="#">김현석 삼성전자 "퀀텀닷 TV, OLED 앞선다"</a></li>
+                        <li><a href="#">삼성전자, 멕시코서 '퀀텀닷 기술 세미나'..</a></li>
+                    </ul>
+                    
+            
                     </div>
                     <div class="bta">
-                        <div class="btal">
-                            <div class="p1">
-                                <div class="fst">
-                                    
-                                </div>
-                            </div>
-                            <div class="p2">
-                                <div class="sec">
-                                    
-                                </div>
-                            </div>
                         
-                            
+                        <div class="patc">
+                            <a href="http://www.inews24.com/php/news_view.php?g_menu=020200&g_serial=959475"><img src="http://static.naver.net/newsstand/2016/0526/inews/114959/002.jpg"></img>랜섬웨어 공격, 아시아 정조준…韓 22배 '폭증'</a>
+                            <a href="http://www.inews24.com/php/news_view.php?g_menu=050200&g_serial=959466"><img src="http://static.naver.net/newsstand/2016/0526/inews/114959/003.jpg"></img>반기문 대선 출마 시사, 정치권 '술렁'</a>
+        
+                                
                         </div>
-                        <div class="btar">
-                            <div class="atcr"></div>
-                            
-                            
-                        </div>
-                    
-                        
+                         <ul>
+                            <li>비욘드 OLED '퀀텀닷', 삼성 "QLED만이 아냐"</li>
+                            <li>"아이폰 판매, 양보다 질이 문제"…신규모델↓</li>
+                            <li>지상파·가전사 UHD 표준 '충돌' 내막</li>
+                            <li>SKB "B tv 월 1만원에 디즈니 무제한 시청"</li><br />
+                            <li>당정 '강남역 묻지마 살인' 대책 논의</li>
+                            <li>더민주 청년일자리 TF 회의 "고통 덜 정책 고민"</li>
+                            <li>국민의당, 대기업-중소기업 격차 축소 법 선언</li>
+                            <li>삼성전자, 스마트폰 글로벌 점유율 회복중</li><br /><br />
+                            <li class="atc">[칼럼] [박준영]출발이 좋은 오버워치, e스포츠로도 성공하길</li>
+                        </ul>
+
                     </div>
                     
                     
                 </div>
                 
                 <div class="rc">
-                    <div class="trc"></div>
+                    <div class="trc">
+                        <div class="trc1"> <img src="http://static.naver.net/newsstand/2016/0526/inews/114959/004.jpg">
+                        </div>
+                        <div class="trc2"></div>
+                       
+                        <img src="http://static.naver.net/newsstand/2016/0526/inews/114959/005.jpg">
+                        이찬오, '냉부해'·'쿡가대표' 자진 하차
+                        한화, 승패 마진 '-20' 극복할 수 있을까
+                        </div>
                     <div class="ctrc"></div>
                     <div class="brc"></div>
                     
