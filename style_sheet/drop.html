@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <style type="text/css">
+        /**{margin:0; padding:0; list-style:none;}*/
+        /*.menu{border:1px red solid; width: 200px;}*/
+        /*.menu ul{margin:20px;}*/
+        /*.menu ul>li:hover ul{display:block;*/
+        /*.menu ul ul{border:1px red solid; text-indent:20px; display:none;}*/
         *{margin:0; padding:0; list-style:none;}
-        .menu{border:1px red solid; width: 200px;}
-        .menu ul{margin:20px;}
-        .menu ul>li:hover ul{display:block; transition:width:200ms: height:200ms;}
-        .menu ul ul{border:1px red solid; text-indent:20px; display:none;}
-        
+         a:link{color:#F00;}
+        .link3 a:hover{color:#00F;}
+        .menu {border:1px red solid; width:200px;}
+        .menu>ul{margin:20px;}
+        .menu ul>li:hover ul{display:block;}
+        .menu ul ul {border:1px red solid; text-indent:20px; display:none;}
     </style>
 </head>
 <body>
@@ -18,15 +24,16 @@
             <li>
                 <a href="">text</a>
                 <ul>
-                    <li><a href="">text</a></li>
-                    <li><a href="">text</a></li>
-                    <li><a href="">text</a></li>
+                    <li class="link3">
+                    <a href="http://naver.com">text</a></li>
+                    <li><a href="#">text</a></li>
+                    <li><a href="#">text</a></li>
                 </ul>
             </li>
             <li>
                 <a href="">text</a>
                 <ul>
-                    <li><a href="">text</a></li>
+                    <li><a href="http://naver.com">text</a></li>
                     <li><a href="">text</a></li>
                     <li><a href="">text</a></li>
                 </ul>

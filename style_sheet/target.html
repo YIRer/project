@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>target</title>
+    <style type="text/css">
+    
+    /*:target{color:#F00;}*/
+        *{list-style:none;}
+        .targetbox {border:1px red solid; width:250px;}
+        .targetbox div{height:0px; overflow:auto; transition:1s cubic-bezier(0.38, 0.01, 0.97, 0.64);}
+        .targetbox div:target{height:100px;}
+        a:link{color:black;}
+        li:hover{color:#16b31e;}
+ 
+
+    </style>
+    
+</head>
+<body>
+    
+    <!--<a href="#text1">text1</a>-->
+    <!--<a href="#text2">text2</a>-->
+    <!--<p id="text1">text1</p>-->
+    <!--<p id="text2">text2</p>-->
+    <div class="targetbox">
+        <ul>
+            <li>
+                <a href="#l1"><b>text</b></a>
+                <div id="l1">-V-Ray Render Test를 통해 최종 Output을 만들 수 있다. -의상 및 액세서리를 표현할 수 있다. -Photoshop에서 이미지를 불러오고 필요에 맞게 합성을 할 수 있다. -이미지편집 및 Retouch 작업을 할 수 있다. -최종 디자인 Layout(도판)작업을 할 수 있다.</div>
+            </li>
+            <li>
+                <a href="#l2">text</a>
+                <div id="l2">-V-Ray Render Test를 통해 최종 Output을 만들 수 있다. -의상 및 액세서리를 표현할 수 있다. -Photoshop에서 이미지를 불러오고 필요에 맞게 합성을 할 수 있다. -이미지편집 및 Retouch 작업을 할 수 있다. -최종 디자인 Layout(도판)작업을 할 수 있다.</div>
+            </li>
+            <li>
+                <a href="#l3">text</a>
+                <div id="l3">-V-Ray Render Test를 통해 최종 Output을 만들 수 있다. -의상 및 액세서리를 표현할 수 있다. -Photoshop에서 이미지를 불러오고 필요에 맞게 합성을 할 수 있다. -이미지편집 및 Retouch 작업을 할 수 있다. -최종 디자인 Layout(도판)작업을 할 수 있다.</div>
+            </li>
+        </ul>
+    </div>
+    
+</body>
+</html>
