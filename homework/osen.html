@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>osen</title>
+    <style type="text/css">
+        *{margin:0; padding:o;}
+        ul li{list-style:none; padding:0; margin:0;}
+        
+        .back
+        {
+           outline:1px red solid; width: 900px; height: 540px; margin:20px auto; padding:0;
+        }
+        .back .header1
+        {
+            border-bottom:3px black solid; width:840px; height: 55px; padding:20px 0px 33px;
+            margin:0px 30px 17px;
+        }
+        
+        .back .logo
+        {
+            outline:1px red solid; width: 260px;height: 55px; float:left;
+        }
+        
+        .back .add
+        {
+            outline:1px red solid; width: 468px; height: 60px; float:right;
+        }
+        
+        .back .button
+        {
+            clear:both;
+        }
+        
+    /*----------------------------------------------------------------------------------------------*/
+        .body
+        {
+            outline:1px red solid; width: 840px;height: 380px; margin:0 30px;
+        }
+        
+        .lc
+        {
+            outline:1px red solid; width: 246px; height: 380px; margin-right: 20px; float:left;
+        }
+        
+        .cc
+        {
+            outline:1px red solid; width: 288px; height: 380px; margin-right:20px; float:left;
+        }
+        
+        .rc
+        {
+            outline:1px red solid; width: 266px; height: 380px; float:right;
+        }
+        /*------------------------------------------------------------------------------------------------*/
+        
+        .pa1
+        {
+            outline:1px red solid; width: 246px; height: 60px; padding-bottom:10px; font-size:13px; color:gray;
+        }
+        .pa1 img{width: 98px;height:60px; float:left; margin-right:10px;}
+        .pa1 strong{color:#f0f;}
+        .pa1 ul li{display:block; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+        
+        .pa2
+        {
+            outline:1px red solid; width: 246px; height: 60px; padding-bottom:10px; font-size:13px; color:gray;
+            display:block; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;
+        }
+        .pa2 img{width: 98px;height:60px; float:left; margin-right:10px;}
+        .pa2 strong{color:#f0f;}
+        .pa2 ul li{display:block; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+       
+       .pa3
+        {
+            outline:1px red solid; width: 246px; height: 60px; padding-bottom:10px; font-size:13px; color:gray;
+            display:block; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;
+        }
+        .pa3 img{width: 98px;height:60px; float:left; margin-right:10px;}
+        .pa3 strong{color:#f0f;}
+        .pa3 ul li{display:block; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+        
+        .pa4
+        {
+            outline:1px red solid; width: 246px; height: 60px; padding-bottom:10px; font-size:13px; color:gray;
+            
+        }
+        .pa4 img{width: 98px;height:60px; float:left; margin-right:10px;}
+        .pa4 ul li{display:block; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+        .pa4 strong{color:#f0f;}
+        
+        /*-----------------------------------------------------------------------------------*/
+        
+        .at1
+        {
+          outline:1px red solid; width: 246px;height: 100px; display:block; overflow:hidden;white-space:nowrap;text-overflow:ellipsis; font-size:13px; 
+          
+        }
+        .pad {padding-left:0; }
+        .pad strong{color:#f0f;}
+        .at ul li{display:block; overflow:hidden; white-space:nowrap; text-overflow:clip;}
+        /*------------------------------------------------------------------------------------------------*/
+        .cat
+        {
+            outline:1px red solid; width: 288px; height: 45px; padding:3px 0 12px; margin-top:6px;
+            font-size:20px; color:blue;
+        }
+        .cat2
+        {
+            outline:1px red solid; width: 288px;height: 110px; font-size:15px; color:#000; margin-top:10px;
+            
+        }
+        .cat2 .pad2
+        {
+            padding:0;
+        }
+        .cat2 ul li{ display:block; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+        /*-----------------------------------------------------------------------------------------------*/
+        
+        .rctop
+        {
+            outline:1px red solid; width: 266px; height: 40px;
+        }
+        
+        /*---------------------------------------------------------------------------------------------------*/
+        .rccen strong {color:#f0f;}
+        .rccen .pa1
+        {
+            outline:1px red solid; width: 266px; height: 58px; display:block; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;
+        }
+        .rccen .pa1 img
+        {float:left;}
+        
+        .rccen .pa2
+        {
+            outline:1px red solid; width: 266px; height: 58px; display:block; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;
+        }
+        .rccen .pa2 img
+        {float:left;}
+        
+        .rccen .pa3
+        {
+            outline:1px red solid; width: 266px; height: 58px; display:block; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;
+        }
+        .rccen .pa3 img
+        {float:left;}
+        
+        /*-----------------------------------------------------------------------------------------------------*/
+        .rcbot
+        {
+            outline:1px red solid; width: 266px;height: 136px;
+        }
+        
+        .p4
+        {
+            outline:1px red solid; width: 87px; height: 136px; float:left; font-size:11px; margin-right:3px;
+        }
+        .p4 .p4i{width:87px;height:120px; background-image:url(http://static.naver.net/newsstand/2016/0529/OSEN/195602/009.jpg);
+            background-size:cover; background-position:top;
+        }
+        
+        .p5
+        {
+            outline:1px red solid; width: 87px; height: 136px; float:left; font-size:11px;
+        }
+        .p5 .p5i{width:87px;height:120px; background-image:url(http://static.naver.net/newsstand/2016/0529/OSEN/195602/010.jpg);
+            background-size:cover; background-position:top;
+        }
+        
+        .p6
+        {
+            outline:1px red solid; width: 87px; height: 136px; float:right; font-size:11px;
+        }
+        .p6 .p6i{width:87px;height:120px; background-image:url(http://static.naver.net/newsstand/2016/0529/OSEN/195602/011.jpg);
+            background-size:cover; background-position:top;
+        }
+        
+        
+    </style>
+    
+</head>
+<body>
+    
+    <div class="back">
+        <div class="header1">
+            <div class="logo"><img src="http://static.naver.net/newsstand/up/2013/0813/nsd114622159.gif"></img></div>
+            <div class="add"><img src="http://adcreative.naver.com/ad3/1004/1004874/468_60_11446516899395.jpg"></img></div>
+            <div class="button">
+                <button type="button">구독하기</button>
+                <button type="button">이용자 한 마디</button>
+                <button type="button">소셜보내기</button>
+                16-05-29            
+            </div>
+                
+        </div>
+        <div class="body">
+            
+            <div class="lc">
+                <div class="pa1">
+                    <img src="http://static.naver.net/newsstand/2016/0529/OSEN/195602/001.jpg"></img>
+                    <strong>프로불참러 조세호, 오늘은 참석 했습니다.</strong>
+                    <ul>
+                    <li>
+                        "오늘은 참석했습니다."
+                    </li>    
+                    </ul>
+                </div>
+                <div class="pa2">
+                    <img src="http://static.naver.net/newsstand/2016/0529/OSEN/195602/002.jpg"></img>
+                    <strong>
+                        '식사' 조성하, 미모의 첫째 딸 공개.."배우 준비중"
+                    </strong>
+                    <ul>
+                        <li>
+                            배우 조성하가 연기자를 준비하고 있는 첫 딸을 공개했다.
+                        </li>
+                    </ul>
+                    
+                </div>
+                <div class="pa3">
+                  <img src="http://static.naver.net/newsstand/2016/0529/OSEN/195602/003.jpg"></img>
+                  <strong>
+                      '유부남과 불륜설' 김세아,<br />매달...
+                  </strong>
+                  <ul>
+                      <li>
+                          배우 김세아가 위자료 청구 소송과 관련해서 강경 대응을 하겠다고 밝혔다.
+                      </li>
+                  </ul>
+                </div>
+                <div class="pa4">
+                    <img src="http://static.naver.net/newsstand/2016/0529/OSEN/195602/004.jpg"></img>
+                    <strong>전효성, 섹시댄스로 힐링?</strong>
+                    <ul>
+                        <li>
+                             '마리텔' 전효성이 입성 기념 섹시댄스로 신고식을 마쳤다.
+                        </li>
+                    </ul>
+                </div>
+                <div class="at1">
+                    <ul class="pad">
+                        <li><strong>로저스 괴력, 4일 휴식에도 127구 완투</strong></li>
+                        <li>2연속 4일 휴식에도 끄덕없었다. 한화 에이스 에스밀 로저스(31)가 시즌 첫 대전 홈경기에서 127</li>
+                        <li><strong>역전 드라마' 최강희, "팬들의 열정과 함성에 보답하겠다</strong></li>
+                        <li>팬들의 열정과 함성에 보답하겠다."전북 현대가 후반 들어 10명이 싸운 상주 상무에 극적인 역전 드라마를 써냈다</li>
+                    </ul>
+                </div>
+                <div class="at2">
+                    
+                    
+                </div>
+            </div>
+            <div class="cc">
+                <img src="http://static.naver.net/newsstand/2016/0529/OSEN/195602/005.jpg" alt="">
+                <div class="cat">티파니, 소녀 벗은 숙녀의 몸매란 이런 것</div>
+                <div class="cat2">
+                    <ul class="pad2">
+                        <li>허들 감독, “강정호, 조심스럽게 보고 있다”</li>
+                        <li>조영남, 대작 의혹 입열어..“화투 갖고 놀다가 망했다”</li>
+                        <li>컴백 아이콘, 남친이 된 괴물들 [iKON's back①]</li>
+                        <li>'디마프' 신구X나문희, 우리 어머니·아버지가 보인다</li>
+                        <li>쇼월터 감독, “김현수, 팀에 필요한 부분 충족시켜”</li>
+                    </ul>
+                    
+                </div>
+            
+            
+            </div>
+            <div class="rc">
+                <div class="rctop">
+                    live 정보
+                </div>
+                <div class="rccen">
+                    <div class="pa1">
+                         <img src="http://static.naver.net/newsstand/2016/0529/OSEN/195602/006.jpg"></img>
+                        <strong>하반신 나체로 거리 활보한 여성을 눈치 채지 못한 이유는</strong><br />
+                        최근 홍콩에서 자신의 하반신에 청바지 문양의 바디 페인팅을 한 채 홍콩 시내를 활보한 여성의 사진이 화제가 되고 있다.
+                    </div>
+                   <div class="pa2">
+                       <img src="http://static.naver.net/newsstand/2016/0529/OSEN/195602/007.jpg"></img>
+                       <strong>행위 예술?, 길에서 성폭행 요청한 예술가...'세상에!'</strong><br />
+                       한 여성 예술가가 길거리에서 성폭행을 당하는 영상을 공개한다고 밝혔다. 문제는 성폭행을 자신이 직접 요청했다는 것이다.
+                   </div>
+                   
+                   <div class="pa3">
+                       <img src="http://static.naver.net/newsstand/2016/0529/OSEN/195602/008.jpg"></img>
+                       <strong>조니 뎁 첫 번째 아내 "여자 때릴 사람 절대 아냐"</strong><br />
+                        조니 뎁이 가정폭력 혐의를 받고 있는 가운데 첫 번째 부인이 그를 두둔하고 나섰다.
+                   </div>
+                    
+                </div>
+                <div class="rcbot">
+                    <div class="p4">
+                        <div class="p4i"></div>
+                        머슬퀸에 등극한
+                        </div>
+                    
+                    <div class="p5">
+                    <div class="p5i"></div>
+                    리한나'거칠것없</div>
+                    <div class="p6">
+                    <div class="p6i"></div>
+                    메디슨 비어 시선</div>
+                    
+                </div>
+            
+            </div>
+            
+            
+            
+            
+        </div>
+  
+    </div>
+    
+</body>
+</html>
