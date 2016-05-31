@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>position</title>
+    
+    <style type="text/css">
+        *{margin:0; padding:0;}
+        ul li{list-style:none;}
+        
+        .back
+        {
+            outline:1px red solid; width: 900px;
+            height: 540px; margin:0 auto; position:relative; top:20px;
+        }
+        
+        .head
+        {
+            border-bottom:3px black solid; width: 840px;
+            height: 88px; position:relative; left:30px; top:20px;
+        }
+        
+        /*-----------------------------------------------------------------------------------------*/
+        .logo
+        {
+            outline:1px red solid; width: 260px;
+            height: 55px; position:absolute; top:0;
+        }
+        
+        .add
+        {
+            outline:1px red solid; width: 468px;
+            height: 60px; position:absolute; right:0; top:0;
+        }
+        .button
+        {
+            outline:1px red solid; position:relative; top:60px;
+        }
+        
+        .back .body
+        {
+            outline:1px red solid; width: 840px;
+            height: 380px; position:relative; left:30px; top:37px;
+        }
+        
+        /*---------------------------------------------------------------------------------------*/
+        
+         .back .body .lc
+        {
+            outline:1px red solid; width: 605px;
+            height: 373px; position:absolute; top:0; }
+        
+        .back .body .lc .top
+        {
+            border-bottom:1px gray solid; width: 605px;
+            height: 240px; position:absolute; top:0;
+        }
+        
+        .back .body .lc .bot
+        {
+            outline:1px red solid; width: 605px;
+            height: 118px; position:relative; top:255px; }
+        
+        
+        
+        .back .body .rc
+        {
+         outline:1px red solid; width: 220px;
+         height: 380px; position:absolute; right:0; }
+         
+        /*---------------------------------------------------------------------------------*/
+        
+        .lc .top .box1
+        {
+            outline:1px red solid; width: 360px;
+            height: 240px; position}
+        
+         .lc .top .box2
+        {
+            outline:1px red solid; width: 117px;
+            height: 118px; position:absolute; top:0; left:366px; }
+        
+           .lc .top .box3
+        {
+            outline:1px red solid; width: 117px;
+            height: 118px; position:absolute; top:0; right:0; }
+    
+             .lc .top .box4
+        {
+            outline:1px red solid; width: 117px;
+            height: 118px; position:absolute; top:119px; left:366px; }
+        
+           .lc .top .box5
+        {
+            outline:1px red solid; width: 117px;
+            height: 118px; position:absolute; top:119px; right:0; }    
+        
+        
+        /*---------------------------------------------------------------------------------------------------*/
+        
+         .lc .bot .box6
+        {
+             outline:1px red solid; width: 117px;
+            height: 118px; position:absolute; left:0;}
+        
+             .lc .bot .box7
+        {
+             outline:1px red solid; width: 117px;
+            height: 118px; position:absolute; left:122px;}
+        
+             .lc .bot .box8
+        {
+             outline:1px red solid; width: 117px;
+            height: 118px; position:absolute; left:244px;}
+        
+             .lc .bot .box9
+        {
+             outline:1px red solid; width: 117px;
+            height: 118px; position:absolute; right:122px;}
+        
+             .lc .bot .box10
+        {
+             outline:1px red solid; width: 117px;
+            height: 118px; position:absolute; right:0;}
+        
+        /*---------------------------------------------------------------------------------------------------------*/
+        
+        .rc .chart
+        {
+            outline:1px red solid; width: 220px;
+            height: 205px; }
+        .rc .chart .ctit
+        {
+            outline:1px red solid; width: 219px;
+            height: 18px; padding:5px 0 2px 5px; font-size:12px; color:white; background-color:#333333;        }
+        
+        .rc .chart .rank
+        {
+            outline:1px red solid; width: 220px;
+            height: 180px;        }       
+        
+        /*------------------------------------------------------------------------------------------------------*/
+        
+          .rc .issue
+        {
+            outline:1px red solid; width: 220px;
+            height: 67px;        }
+        
+        .rc .issue .itit
+        {
+             outline:1px red solid; width: 219px;
+            height: 18px; padding:5px 0 2px 5px; margin:5px 0 0; font-size:12px; color:white; background-color:#b42568;        }
+        
+        .rc .issue .iatc
+        {
+             outline:1px red solid; width: 220px;
+            height: 36px; margin-bottom:5px; font-size:12px; overflow:hidden; white-space:nowrap; display:block;        }
+        
+        
+        
+        
+        
+        /*---------------------------------------------------------------------------------------------------*/
+        
+        .book
+        {
+            outline:1px red solid; width: 220px; height: 103px;        }
+            
+        .rc .book .btit
+        {
+            outline:1px red solid; width: 219px;
+            height: 18px; padding:5px 0 2px 5px; margin-bottom:5px; background-color:#235475; color:white;
+            font-size:12px;        }
+            
+        .rc .book .batc
+        {
+            outline:1px red solid; width: 220px; overflow:hidden; 
+            height: 64px; padding:0; font-size:12px;        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+    <div class="back">
+        
+        <div class="head">
+            <div class="logo"><img src="http://static.naver.net/newsstand/up/2016/0325/nsd185740259.png" alt=""></div>
+            <div class="add"><img src="http://adcreative.naver.com/ad3/1004/1004874/468_60_11446516899395.jpg" alt=""></div>
+            <div class="button">
+                <button type="button">구독하기</button>
+                <button type="button">이용자 한마디</button>
+                <button type="button">소셜보내기</button>
+                16-05-31
+            </div>
+            
+            
+            
+            
+        </div>
+        
+        <div class="body">
+             
+            <div class="lc">
+                <div class="top"> 
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+                <div class="box4"></div>
+                <div class="box5"></div>
+                
+                </div>
+                <div class="bot"> 
+                <div class="box6"></div>
+                <div class="box7"></div>
+                <div class="box8"></div>
+                <div class="box9"></div>
+                <div class="box10"></div>
+                
+                
+                
+                </div>
+            </div>    
+               
+            <div class="rc">
+                
+                <div class="chart">
+                    <div class="ctit"></div>
+                    <div class="rank"></div>
+                    
+                </div>
+                <div class="issue">
+                    <div class="itit"></div>
+                    <div class="iatc"></div>
+                    
+                </div>
+                <div class="book">
+                    <div class="btit"></div>
+                    <div class="batc"></div>
+                    
+                    
+                </div>
+                
+            </div>        
+        </div>  
+    </div>
+    
+    
+</body>
+</html>
