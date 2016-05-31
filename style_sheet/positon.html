@@ -5,15 +5,15 @@
     <title>Document</title>
 
    <style type="text/css">
+   *{margin:0;padding: 0;}
+   div{font-size: 3em;}
 
-        .box
+        /*.box
        {
-           border:3px blue solid;
+           border:1px blue solid;
            width: 100px;
            height: 100px;
            position:relative;
-           top:100px;
-           left:100px;
 
        }
 
@@ -23,9 +23,70 @@
            width: 100px;
            height: 100px;
            position:relative;
-           top:200px;
-           left:50px;
+           left:50px; bottom:20px;
+
        }
+       .box3
+       {
+           border:1px red solid;
+           width: 100px;
+           height: 100px;
+           position:relative;
+
+       }*/
+
+       .box
+       {
+
+           position:absolute;
+           background-position: center;
+           -webkit-background-size: cover;
+           background-size: cover;
+       }
+
+
+       .box1
+       {
+         position: absolute;
+         top: 0;
+         bottom: 50%;
+         left: 0;
+         right: 50%;
+         background-image: url(images/ladder1.jpg);
+       }
+       .box2
+       {
+         position: absolute;
+         top: 0;
+         bottom: 50%;
+         left: 50%;
+         right: 0;
+         background-image: url(images/ladder2.jpg);
+       }
+
+       .box3
+       {
+         position: absolute;
+         top: 50%;
+         bottom: 0;
+         left: 0;
+         right: 50%;
+         background-image: url(images/ladder3.jpg);
+       }
+       .box4
+       {
+         position: absolute;
+         top: 50%;
+         bottom: 0;
+         left: 50%;
+         right: 0;
+         background-image: url(images/sky1.jpg);
+       }
+
+
+
+
+
 
 
     </style>
@@ -36,8 +97,10 @@
 
 <body>
 
-    <div class="box2"><img src="http://nv1.tveta.naver.net/libs/1133/1133543/20160525173926-dNlTNJlR.jpg" alt=""></div>
-    <div class="box"><img src="http://special.dn.naver.net/www/u/2016/0530/nmms_18371831.gif" alt=""></div>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
 
 
 
