@@ -6,13 +6,41 @@
   <style type="text/css">
 /*전체 태그 설정*/
   html,body{margin: 0;padding: 0; width: 100%;}
+  .layout1 {width: 100%;}
 
 
-/*세세한 태그 설정*/
-  .top {outline:1px red solid; width: auto; height:55px; background-image: url(images/top.png); display:table-cell; }
-  .top img{width: 100%;}
+
+/*레이아웃 설정*/
+  .top {outline: 1px red solid; height:55px; background-image:url(images/bg_hd.png); padding-top: 5px;}
+  .top img{height: 100%; width: 100%;}
+  .top .naverstents{border:0; background-color: transparent; width: 118px;height: 30px; background-image: url(images/naverstents_02.png); background-position: center; background-repeat: no-repeat;}
+
+  .background{outline:1px red solid; position: absolute; top:49px; bottom:81px; background-image: url(images/background.png);}
+
+  .botmenu {height: 81px; outline:1px red solid; position: absolute; bottom:0; background-image: url(images/bottext.png)}
 
 
+
+
+  .submenu {height: 28px; outline:1px red solid; position:absolute; top:0;}
+  .newslist {outline:1px red solid; height: 88px; position: absolute; bottom:0;}
+  .content {outline:1px red solid; position: relative;top:113px;}
+  .centercontent {outline: 1px red solid; width: 900px;height: 540px; position: relative;top:0;  margin:0 auto; background-image: url(images/news.png); background-position: center;}
+  .leftcontent {height: 100%; position: absolute; left:0; top:0; outline: 1px red solid;}
+  .rightcontent {height: 100%; position: absolute; left:0; top:0; outline: 1px red solid;}
+/*꾸미기*/
+
+/*뉴스명, 광고*/
+  .header {border-bottom:3px black solid; width: 840px; height: 85px; position:relative; left:30px; top:20px;}
+  .logo { outline:1px red solid; width: 260px; height: 55px; position:absolute; top:0; background-image: url(http://static.naver.net/newsstand/up/2016/0325/nsd18561249.png);}
+  .adver { outline:1px red solid; width: 468px; height: 60px; position:absolute; right:0; top:15px;  }
+  .otherbut { outline:1px red solid; position:relative; top:60px; padding: 0;}
+
+/*컨텐츠*/
+.centercontent .contentbody {outline:1px red solid; width: 840px; height: 380px; position:relative; left:30px; top:30px;}
+.goodoc{width: 66px; height: 22px; background-image: url(images/goodock.png);}
+.iyongja{width: 75px; height: 22px; background-image: url(images/iyongja.png);}
+.socal{width: 28px; height: 22px; background-image: url(images/socal.png);}
 
 
 
@@ -23,25 +51,73 @@
 
 </head>
 <body>
-  <div class="top">sadsa</div>
-  <div class="submenu"></div>
+  <div class="top layout1">
 
-  <div class="contet">
-    <div class="leftcontent"></div>
-    <div class="centercontent"></div>
-    <div class="rightcontent"></div>
+    <button class="naverstents"></button>
+    <span>뉴스스탠드이미지</span>
+    <button>마이뉴스</button>
+    <button>전체언론사</button>
+    <button>로그인</button>
+    <button>전체보기</button>
+    <button>새로고침</button>
+    <button>설정</button>
+    <button>네이버</button>
   </div>
-  <div class="botmenu">
-    <div class="newslist"></div>
-    <div class="bottext"></div>
+  <div class="background layout1">
+        <div class="submenu layout1">
+
+    </div>
+    <div class="content layout1">
+      <div class="leftcontent"></div>
+      <div class="centercontent">
+
+        <div class="header">
+          <div class="logo"></div>
+          <div class="adver"><img src="http://adcreative.naver.com/ad3/1004/1004874/468_60_11446516899395.jpg" alt=""></div>
+          <div class="otherbut">
+            <button type="button" class="goodoc"></button>
+            <button type="button" class="iyongja"></button>
+            <button type="button" class="socal"></button>
+            16-05-31
+          </div>
+
+
+        </div>
+        <div class="contentbody">
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="rightcontent"></div>
+    </div>
+    <div class="newslist layout1"></div>
+
   </div>
 
 
-
-
-
-
-
+  <div class="botmenu layout1"></div>
 
 
 </body>
