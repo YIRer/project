@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+        /*http://www.w3schools.com/cssref/css_selectors.asp*/
+
+       *{margin:0; padding:0;}
+        /*[href$=".pdf"][*/
+        /*[class^="color-"]{border:1px #F00 solid;}*/
+        /*[class$="-model"]{border:1px #F00 solid; margin-left:100px;}*/
+        /*[class*="text"]{border-width:3px;}*/
+        
+        /*#menu>ul>li:first-child+li{border:1px #F00 solid;}    */
+        /*#menu>ul>li:first-child+li+li{border:1px #00F solid;}*/
+        /*#menu>ul>li:first-child+li+li+li>a{margin:10px;}*/
+        ul{list-style:none;}
+        #menu{margin:100px;}
+        #menu ul ul{display:none;}
+        #menu>ul>li{border-left:1px #F00 solid; padding:10px 0; float:left; margin:0 20px;}        
+        #menu>ul>li:first-child{border-left:0;}
+        
+        a:link{color:#F00;}
+        a:hover{color:#00F;}
+        a:visited{color:#FF0;}
+        a:active{color:#F0F;}
+        
+        /*
+        p
+        .
+        #
+        +
+        []
+        >
+        first-child
+        
+        */
+        /*.box{border:1px #F00 solid; width: 100px;height: 100px;}*/
+        /*.a::before{float:left;content:""; display:block;clear:both;}*/
+        /*.b{width:200px; margin-top:10px;}*/
+        
+        
+        
+        
+        .b{margin:100px;}
+        .b::before{display:block; content:""; width:100px; height:100px; border:1px #F00 solid; transition:2s;}
+        .b::after{display:block; content:""; width:100px; height:100px; border:1px #F00 solid; transition:3s}
+        .b:hover::before{margin-top:20px; transform:rotateX(180deg); margin-left:100px;}
+        .b:hover::after{margin-top:20px;transform:rotateY(-180deg); margin-right:100px;}
+        
+    </style>
+    
+    
+    
+    	
+	<!--선택자. 엘리먼트에게 스타일명령을 하기위한 방법이다.-->
+	
+	<!--p 태그를 선택방법-->
+	<!--.className 클래스 선택방법-->
+	<!--#idname 아이디 선택방법-->
+	<!--[속성] ex) <a href="">-->
+	<!--[href]{style....}-->
+	<!--[href="http://naver.com"]-->
+
+	<!--a,p 동시선택자-->
+	<!--[href^="foo"] 속성의 값중에 foo  라는 문자로 시작되는 엘리먼트를 선택한다-->
+	<!--[href$="foo"] 속성의 값중에 foo  라고 끝나는 엘리먼트를 선택한다-->
+	<!--[href*="foo"] 속성의 값중에 foo 라는 문자가 포함되어있는 엘리먼를 선택한다.-->
+
+
+	<!--: 필터 선택자-->
+	<!--:first-child - 엘리먼트중 첫번째에해당하는 엘리먼트를 선택한다-->
+	<!--a:link : 링크가 있는 선택자-->
+	<!--a:hover : 마우스가 오버된 선택자-->
+	<!--a:visibted : 한번 방문한 선택자-->
+	<!--a:active : 마우스를 클릭 했을때 발생하는 선택자 -->
+
+	<!--:target : 타겟선택자는 아이디가 발상된 엘리먼트와 연관관계를 만들어 클릭시 해당 타겟엘리먼트에게 스타일시트를 부여할수 있다-->
+	
+
+	<!--호환성이 떨어지는 선택자-->
+	<!--:last-child - 엘리먼트중 첫번째에해당하는 엘리먼트를 선택한다(호환성이떨어짐으로 되도록 first-	child 사용될수있는 조건을 만들어줘야한다.)-->
+	<!--::before  엘리먼트 의 전부분에 다른컨텐츠로 엘리먼트를 만들어 사용할수있다 -->
+	<!--::after  엘리먼트 의 전부분에 다른컨텐츠로 엘리먼트를 만들어 사용할수있다 -->
+
+	<!--다음선택자-->
+	<!--+ : 부호를 이용해서 선택자는 다음 선택자이다. (Next  선택자)-->
+	<!--ex) li:first-child + li -->
+	<!--~ : Next All 선택자는 선택된엘리먼트를 제외하고 그다음 엘리먼트부터 마지막 엘리먼트 까지 선택할수 있다.-->
+
+	<!--자식요소 선택자-->
+	<!--div p 자식요소 선택자중 처음시작으로부터 마지막에 작성된 선택자는 하의 모든컨의  p태그를 검색한다-->
+	
+	<!--div > p  조건선택자 -->
+
+	 
+ 
+
+	
+	
+	
+	
+
+
+
+
+
+
+
+	
+
+
+	
+    
+    
+    
+</head>
+<body>
+    
+    
+    <div class="box b">sdfsdfds</div>
+        
+    <div id="menu">
+        <ul>
+            <li class="이놈"><a href="sdfsf">text</a>
+                <ul>
+                    <li><a href="#" title="을" class="color-text-model">하위</a></li>
+                    <li><a href="#">하위</a></li>
+                    <li><a href="#dsdf">하위</a></li>
+                </ul>
+            </li>
+            
+            <li><a href="sdfsdf">text</a></li>
+            <li><a href="sdfsdf">text</a></li>
+            <li><a href="ssdfsdf" title="하위">text</a></li>
+            <li><a href="sdf">text</a></li>
+            <li><a href="">text</a></li>
+        </ul>
+    </div>
+    
+    
+    
+</body>
+</html>

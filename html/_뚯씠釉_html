@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+
+  <!-- <table></table>
+
+    <tr></tr> 테이블 로우
+    <td></td> 테이블 데이터
+      <thead></thead> 테이블 제목 컨텐츠를 <th></th>로 묶음
+      <tfoot></tfoot> 테이블 끝 <td></td> 로 묶음
+
+    <colgroup> <col></col></colgroup> 표 관련 영역크기 설정
+    <caption></caption> 표의 제목
+    <summary></summary> or summary 표에대한 설명 주로 태그안에 넣어서 숨겨놓는다.
+    colspan="차지하는 열의 개수" 표 열 병합
+    rowspan="차지하는 행의 개수" 표 행 병합
+    scope="" 읽는 방향 설정 col - 아래로 row - 가로로 colgroup - col그룹을 읽음
+    표가 여러변 병합되어 난잡한 경우 - 표 셀 하나하나에 id값 부여.
+    <td headers="f1 f24 ......"></td>
+
+
+
+
+
+  -->
+
+<table border="2" width="100%" summary="세부설명">
+  <caption>표의제목</caption>
+  <colgroup>
+    <col width="100px"></col>
+    <col></col>
+    <col width="100px"></col>
+  </colgroup>
+  <thead>
+    <tr>
+        <th>text</th>
+        <th>text</th>
+        <th>text</th>
+        <th>text</th>
+      </tr>
+    </thead>
+
+  <tfoot>
+    <tr>
+          <th>text</th>
+          <td>asd</td>
+          <td>text</td>
+          <td>st</td>
+        </tr>
+    </tfoot>
+
+    <tbody>
+      <tr>
+
+          <th>text</th>
+          <td>text</td>
+          <td>text</td>
+          <td>text</td>
+        </tr>
+        <tr>
+
+            <th>text</th>
+            <td>text</td>
+            <td>text</td>
+            <td>text</td>
+          </tr>
+        </tbody>
+
+
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>select</title>
+    
+    <style type="text/css">
+        
+        ul,li {list-style:none;}
+        /*.a1 ul>li:first-child~li {color:red;}*/
+        /*.a1 ul>li:first-child+li+li {color:red;}*/
+        .a1 ul>li:first-child~li~li {color:red;}
+        
+        /*div[class^="asdf"]{border:1px red solid; width: 300px;height: 100px;}*/
+        /*div[class$="l987"]{border-right:3px blue solid; width: 300px;height: 300px;}*/
+        /*div[class*="kkk"]{border:1px black solid; width: 100px;height: 100px;}*/
+        div[id^="box"]{border:1px red solid;height: 0px; overflow:auto; transition:2s ease;}
+        div[id^="box"]:target{height: 100px;}
+        li:hover{color:#16b31e;}
+        
+        /*a1::before{display:block; }*/
+        
+        /*.a1{margin:100px;}*/
+        /*.a1::before{display:block; content:""; width:100px; height:100px; border:1px #F00 solid; transition:2s;}*/
+        /*.a1::after{display:block; content:""; width:100px; height:100px; border:1px #F00 solid; transition:3s}*/
+        /*.a1:hover::before{margin-top:20px; transform:rotateX(180deg); margin-left:100px;}*/
+        /*.a1:hover::after{margin-top:20px;transform:rotateY(-180deg); margin-right:100px;}*/
+        
+        
+        
+    </style>
+    
+
+
+
+
+</head>
+<body>
+    
+    <div class="a1">
+        
+        <ul>
+            <li>123</li>
+            <li>456</li>
+            <li>789</li>
+            <li>101112</li>
+            <li>131415</li>
+        </ul>
+    </div>
+    <div class="a2">
+        <div class="asdf_l123_kkk"></div>
+        <div class="wqer_l987_kkk"></div>
+        <div class="asdf_l987_kkk"></div>
+    
+    </div>
+    <div class="a3">
+  <ul>
+      <li><a href="#box">asdf</a>
+      <div id="box">V-Ray Render Test를 통해 최종 Output을 만들 수 있다. -의상 및 액세서리를 표현할 수 있다. -Photoshop에서 이미지를 불러오고 필요에 맞게 합성을 할 수 있다. -이미지편집 및 Retouch 작업을 할 수 있다. -최종 디자인 Layout(도판)작업을 할 수 있다.</div>
+      </li>
+      <li><a href="#box2">asdf</a>
+      <div id="box2">-V-Ray Render Test를 통해 최종 Output을 만들 수 있다. -의상 및 액세서리를 표현할 수 있다. -Photoshop에서 이미지를 불러오고 필요에 맞게 합성을 할 수 있다. -이미지편집 및 Retouch 작업을 할 수 있다. -최종 디자인 Layout(도판)작업을 할 수 있다.</div>
+      </li>
+      <li><a href="#box3">asdf</a>
+        <div id="box3">-V-Ray Render Test를 통해 최종 Output을 만들 수 있다. -의상 및 액세서리를 표현할 수 있다. -Photoshop에서 이미지를 불러오고 필요에 맞게 합성을 할 수 있다. -이미지편집 및 Retouch 작업을 할 수 있다. -최종 디자인 Layout(도판)작업을 할 수 있다.</div>
+      </li>
+  </ul>
+  
+  
+    </div>
+    
+    
+</body>
+</html>

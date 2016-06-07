@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <h1>회원가입</h1>
+<form>
+
+<fieldset>
+  <legend>필수입력</legend>
+  <ul>
+    <li>
+
+      <label for="uesrId">
+          아이디
+          <input type="text" name="userName" id="uesrId">
+      </label>
+
+    </li>
+    <li>
+
+      <label for="uesrPw">
+         패스워드
+         <input type="text" name="pw" id="uesrPw">
+       </label>
+    </li>
+
+    <li>
+
+      <label for="sex">
+          성별
+          <label for="man"><input type="radio" name="sex" id="man">남성</label>
+          <label for="woman"><input type="radio" name="sex" id="woman">여성</label>
+          <label for="visexual"><input type="radio" name="sex" id="visexual">양성</label>
+
+      </label>
+
+    </li>
+
+    <li>
+
+      <label for="a">
+          결혼여부
+          <label for="a1"><input type="checkbox" name="a" id="a1">미혼</label>
+          <label for="a2"><input type="checkbox" name="a" id="a2">기혼</label>
+          <label for="a3"><input type="checkbox" name="a" id="a3">중혼</label>
+          <label for="a4"><input type="checkbox" name="a" id="a4">결혼예정</label>
+          <label for="a5"><input type="checkbox" name="a" id="a5">포기</label>
+
+      </label>
+
+    </li>
+
+    <label for="photoUpload">
+        사진업로드
+    </label>
+    <input type="file" id="photoUpload" placeholder="아이디">
+
+    </label>
+
+  </li>
+
+
+  </ul>
+
+  <input type="button" value="취소">
+  <input type="submit" value="전송">
+  <input type="reset" value="초기화">
+
+</fieldset>
+
+</form>
+
+</body>
+</html>
