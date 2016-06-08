@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+        
+        *{margin:0;padding: 0;}
+        html,body {height: 100%;}
+        ul,ol {list-style:none;}
+        
+        
+        .warpper {height: 100%; border:1px red solid; background-image: url(img/bg-pc.jpg); -webkit-background-size: cover;
+        background-size: cover; background-repeat: no-repeat; background-position: center top;}
+        
+        
+        .warpper .logo {width: 350px;height: 350px; background-image: url(img/mainlogo.png); border:1px red solid; -webkit-background-size: cover;
+        background-size: cover; background-repeat: no-repeat; position: absolute; top:35%; transform:scale(0.9,0.9); transition:1000ms;}
+        
+        .warpper .logo:hover{transform:scale(1.2,1.2); opacity:0;}
+    
+   
+   
+        /*반응형 웹*/
+        
+        
+        @media screen and (max-width:720px){
+            .warpper {background-image: url(img/bg-720.jpg); background-position: center;}
+            .warpper .logo {position:relative; margin: 0 auto; top:10%;}
+            
+        }
+        
+        
+        
+        
+    </style>
+    
+    
+</head>
+<body>
+    
+    <div class="warpper">
+        <div class="logo">
+            
+        </div>
+        
+        
+        
+        
+    </div>
+    
+    
+</body>
+</html>
