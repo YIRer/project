@@ -13,15 +13,14 @@
 
 /*레이아웃 설정*/
   .top {outline: 1px red solid; width: 100%; height:55px; position: fixed; top:0; left:0; right:0; background-image:url(images/bg_hd.png); padding-top: 5px;}
-  .background{outline:1px red solid; position: absolute;left:0; right:0; top:40px; bottom:81px; background-image: url(images/background.png); }
-  .botmenu {height: 81px; outline:1px red solid; position: fixed;left:0; right:0; bottom:0; background-image: url(images/bottext.png);
-        font-size:11px; text-align:center; color:#aca69f;  }
-
-  .newslist {outline:1px red solid; width:100%; height: 95px; position: absolute; bottom:0; background-image: url(images/bg_nv.png); overflow:hidden;}
-  .content {outline:1px red solid; position: absolute; top:109px;}
-  .centercontent {outline: 1px red solid; width: 900px;height: 564px; position: relative; top:0; left: 50%; transform: translateX(-50%); background-image: url(images/news.png); background-position: center;}
-  .leftcontent { height: 564px; position: absolute; right:50%; top:0; margin-right: 475px; outline: 1px red solid;}
-  .rightcontent {height: 100%; position: absolute; left:50%; top:0; margin-left: 475px;outline: 1px red solid;  }
+  .background{outline:1px red solid; position: absolute;left:0; right:0; top:49px; bottom:81px;}
+  .botmenu {height: 81px; outline:1px red solid; position: fixed;left:0; right:0; bottom:0; background-image: url(images/bottext.png)}
+  .submenu {height: 28px; outline:1px red solid; position:absolute; top:0;}
+  .newslist {outline:1px red solid; height: 88px; position: absolute; bottom:0;}
+  .content {outline:1px red solid; position: relative;top:109px;}
+  .centercontent {outline: 1px red solid; width: 900px;height: 540px; position: relative; top:0; left: 50%; transform: translateX(-50%); background-image: url(images/news.png); background-position: center;}
+  .leftcontent {height: 100%; position: absolute; left:0; top:0; outline: 1px red solid;}
+  .rightcontent {height: 100%; position: absolute; left:0; top:0; outline: 1px red solid;}
 
 
 /*꾸미기*/
@@ -38,11 +37,11 @@
   .top .mynews {width: 87px; height: 30px; display: inline-block;}
   .top .all_paper {width: 87px; height: 30px; display: inline-block;}
   .top .righttop .logbutton {border:0; background-color: #fff;font-size:12px; float:left; margin:5px 7px 0 0;}
-  .top .box {width: 16px; height: 16px; background-image: url(images/cutting/box.png); background-position: 7px 9px 5px 9px;}
-  .top .refresh {width: 66px; height: 21px; background-image: url(images/cutting/refresh.png);}
-  .top .setting {width: 46px; height: 21px; background-image: url(images/cutting/setting.png);}
-  .top .woodnaver {width: 66px; height: 21px; background-image: url(images/cutting/woodnaver.png); background-position:center; background-repeat:no-repeat;}
-  .top .btn img{height: 100%;}
+  /*.top .box {width: 16px; height: 16px; background-image: url(images/cutting/box.png); background-position: 7px 9px 5px 9px;}*/
+  /*.top .refresh {width: 66px; height: 21px; background-image: url(images/cutting/refresh.png);}*/
+  /*.top .setting {width: 46px; height: 21px; background-image: url(images/cutting/setting.png);}*/
+  /*.top .woodnaver {width: 66px; height: 21px; background-image: url(images/cutting/woodnaver.png); background-position:center; background-repeat:no-repeat;}*/
+  /*.top .btn img{height: 100%;}*/
     .top .righttop li a{float:left;}
     .top .righttop li .bg{background-image: url(images/cutting/stack.png); background-repeat: no-repeat; background-position:center right;}
     .top .righttop .box {margin-right: 10px; width: 22px; height: 16px; padding:7px 9px 5px; display:block;}
@@ -52,27 +51,17 @@
 
 /*서브메뉴*/
 
-      .background .topsubmenu {position:absolute; top:10px; width: 100%; height:28px; outline: 1px red solid; text-align:center;}
-      .background .topsubmenu .trend {width: 72px; height: 24px;}
-      .background .topsubmenu .econmic {width: 68px; height: 24px;}
-      .background .topsubmenu .boardcast {width: 68px; height: 24px;}
-      .background .topsubmenu .it {width: 32px; height: 24px;}
-      .background .topsubmenu .english {width: 52px; height: 24px;}
-      .background .topsubmenu .sports {width: 79px; height: 24px;}
-      .background .topsubmenu .magazine {width: 89px; height: 24px;}
-      .background .topsubmenu .local {width: 40px; height: 24px;}
-      .background .topsubmenu ul{font-size:0;}
-      .background .topsubmenu ul>li{display:inline;}
+      .top .topsubmenu {position:absolute; top:60px; width: 100%; height:28px; outline: 1px red solid; text-align:center;}
+      .top .topsubmenu .trend {width: 72px; height: 24px;}
+      .top .topsubmenu .econmic {width: 68px; height: 24px;}
+      .top .topsubmenu .boardcast {width: 68px; height: 24px;}
+      .top .topsubmenu .it {width: 32px; height: 24px;}
+      .top .topsubmenu .english {width: 52px; height: 24px;}
+      .top .topsubmenu .sports {width: 79px; height: 24px;}
+      .top .topsubmenu .magazine {width: 89px; height: 24px;}
+      .top .topsubmenu .local {width: 40px; height: 24px;}
+      .top .topsubmenu ul>li{display:inline;}
 
-
-/*화살표*/
-
- .na {outline:1px red solid; height: 540px; display:table-cell; vertical-align:middle;}
-
- .newsbotbutleft {outline:1px red solid; position:absolute; left:0; bottom:0;}
- .newsbotbutleft img{vertical-align:middle; margin-right: 10px;}
- .newsbotbutright {outline:1px red solid; position:absolute; right:0; bottom:0;}
- .newsbotbutright img{vertical-align:middle;}
 
 
 
@@ -93,7 +82,7 @@
 .goodoc{width: 66px; height: 22px; background-image: url(images/goodock.png);float:left;}
 .iyongja{width: 75px; height: 22px; background-image: url(images/iyongja.png); margin-left: 2px;float:left;}
 .socal{width: 28px; height: 22px; background-image: url(images/socal.png); margin-left: 5px;float:left;}
-/*.leftcontent {outline:1px red solid; min-width: 1003px; min-height: 550px; position:relative; left:0; top:0;} */
+.leftcontent {outline:1px red solid; min-width: 1003px; min-height: 550px; position:relative; left:0; top:0;}
 
 .headline {outline:1px red solid; width: 840px; height: 173px;}
 .headline .headlinenews span{overflow:hidden;}
@@ -105,27 +94,7 @@
 .newslistbot li img{float:left; width: 123px; height: 80px; margin-right:10px;}
 .newslistbot li strong{color:#187BBD; line-height: 150%;width: 279px; height: 22px;display:block; font-size:15px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
 .newslistbot li span{display: block; font-size:11px; color:#676767; margin-top:3px;}
-  
-  /*뉴스리스트*/
-  
-  .centerbox {outline:1px red solid; height: 83px; width: 32px; display:table-cell; text-align:center; vertical-align:middle;}
-  .centerbox img{height: 100%;}
-  .leftnewslist {position:absolute;  top:7px; left:0;}
-  .rightnewslist {position:absolute; top:7px; right:0;}
-  
-  .centernewslist {padding:12px 27px 0 32px; text-align: left;}
-  .centernewslist img{width: 81px; height: 73px;}
-  .centernewslist ul{font-size:28px; }
-  .centernewslist ul>li{display:inline;}
-  
-  /*바텀*/
-  .fontc {color:#ffffff;}
-  .fontc strong{color:#ddc196;}
-  
-  
-  
-  
-</style>
+  </style>
 
 
 
@@ -136,7 +105,7 @@
       <button class="btn stend"></button>
       <button class="btn stendatc"></button>
     </div>
-   
+
     <div class="righttop">
       <button type="button" class="logbutton">로그인</button>
       <ul class="topmenu">
@@ -146,21 +115,15 @@
         <li><a href="#" class="setting bg"><img src="images/cutting/setting.png" alt=""></a></li>
         <li><a href="#" class="woodnaver"><img src="images/cutting/woodnaver.png" alt=""></a></li>
       </ul>
-      
-      
-    </div>
-    
-     <div class="centertop">
-      
-    <span class="mynews"><img src="images/cutting/mynews.png" alt=""></span><span class="all_paper"><img src="images/cutting/all_paper.png" alt=""></span>
-      
-    </div>
-    
 
-    
-   
-  </div>
-  <div class="background layout1">
+
+    </div>
+
+     <div class="centertop">
+
+    <span class="mynews"><img src="images/cutting/mynews.png" alt=""></span><span class="all_paper"><img src="images/cutting/all_paper.png" alt=""></span>
+
+    </div>
     <div class="topsubmenu">
       <ul>
         <li><a href="#" class="trend"><img src="images/cutting/trend.png" alt=""></a></li>
@@ -171,14 +134,15 @@
         <li><a href="#" class="sports"><img src="images/cutting/sports.png" alt=""></a></li>
         <li><a href="#" class="magazine"><img src="images/cutting/magazine.png" alt=""></a></li>
         <li><a href="#" class="local"><img src="images/cutting/local.png" alt=""></a></li>
-        </ul>
+      </ul>
     </div>
+
+
+
+  </div>
+  <div class="background layout1">
     <div class="content layout1">
-      <div class="leftcontent">
-        
-         <div class="na"><img src="images/cutting/pre_big.png"></div>
-        
-      </div>
+      <div class="leftcontent"></div>
       <div class="centercontent">
 
         <div class="header">
@@ -200,7 +164,7 @@
               <li><span><img src="http://static.naver.net/newsstand/2016/0603/bloter/115005/002.jpg" alt=""></span></li>
               <li><span><img src="http://static.naver.net/newsstand/2016/0603/bloter/115005/003.jpg" alt=""></span></li>
            </ul>
-           
+
            <div class="newslistbot">
            <ul>
               <li>
@@ -223,71 +187,25 @@
                 <strong>[IT열쇳말] 하이퍼루프</strong>
                 <span>세대 이동수단으로 꼽히는 ‘하이퍼루프’는 테슬라 모터스와 스페이스X의 CEO로 잘 알려진 일론 머스크가 고안했다. 하이퍼루프는 진공 상태의 튜브 안에서 움직인다....</span>
               </li>
-        
+
            </ul>
            </div>
-           
+
           </div>
-          
-  
+
+
         </div>
-              
-          <div class="newsbotbutleft"><img src="images/cutting/auto.png"></img><img src="images/cutting/off.png"></img></div>
-          <div class="newsbotbutright"><img src="images/cutting/Untitled-1_03.png"></img><img src="images/cutting/sp_nwstd_03.png"></img><img src="images/cutting/sp_nwstd_03-02.png"></img></div>
 
-    
+
       </div>
-      <div class="rightcontent">
-         <div class="na"><img src="images/cutting/next_big.png"></div>
-      </div>
+      <div class="rightcontent"></div>
     </div>
-    
-    
-    <div class="newslist layout1">
-      <div class="leftnewslist">
-        <div class="centerbox"><img src="images/cutting/pre_small.png"></div>
-      </div>
-       <div class="rightnewslist">
-        <div class="centerbox"><img src="images/cutting/next_small.png"></div>
-      </div>
-      <div class="centernewslist">
-        <ul>
-          <li><a href="#"><img src="http://static.naver.net/newsstand/up/2014/0715/021.gif"></a></li>
-          <li><a href="#"><img src="http://static.naver.net/newsstand/up/2014/0715/021.gif"></a></li>
-          <li><a href="#"><img src="http://static.naver.net/newsstand/up/2014/0715/021.gif"></a></li>
-          <li><a href="#"><img src="http://static.naver.net/newsstand/up/2014/0715/021.gif"></a></li>
-          <li><a href="#"><img src="http://static.naver.net/newsstand/up/2014/0715/021.gif"></a></li>
-          <li><a href="#"><img src="http://static.naver.net/newsstand/up/2014/0715/021.gif"></a></li>
-          <li><a href="#"><img src="http://static.naver.net/newsstand/up/2014/0715/021.gif"></a></li>
-          <li><a href="#"><img src="http://static.naver.net/newsstand/up/2014/0715/021.gif"></a></li>
-          <li><a href="#"><img src="http://static.naver.net/newsstand/up/2014/0715/021.gif"></a></li>
-          <li><a href="#"><img src="http://static.naver.net/newsstand/up/2014/0715/021.gif"></a></li>
-          <li><a href="#"><img src="http://static.naver.net/newsstand/up/2014/0715/021.gif"></a></li>
-          <li><a href="#"><img src="http://static.naver.net/newsstand/up/2014/0715/021.gif"></a></li>
-          <li><a href="#"><img src="http://static.naver.net/newsstand/up/2014/0715/021.gif"></a></li>
-          <li><a href="#"><img src="http://static.naver.net/newsstand/up/2014/0715/021.gif"></a></li>
-          <li><a href="#"><img src="http://static.naver.net/newsstand/up/2014/0715/021.gif"></a></li>
-          <li><a href="#"><img src="http://static.naver.net/newsstand/up/2014/0715/021.gif"></a></li>
-          <li><a href="#"><img src="http://static.naver.net/newsstand/up/2014/0715/021.gif"></a></li>
-          <li><a href="#"><img src="http://static.naver.net/newsstand/up/2014/0715/021.gif"></a></li>
-          <li><a href="#"><img src="http://static.naver.net/newsstand/up/2014/0715/021.gif"></a></li>
-          <li><a href="#"><img src="http://static.naver.net/newsstand/up/2014/0715/021.gif"></a></li>
-        </ul>
-        
-      </div>
-     
-      
-    </div>
+    <div class="newslist layout1"></div>
 
   </div>
 
 
-  <div class="botmenu layout1">
-<p class="fontc"><strong>공지사항</strong> 언론사별 주요기사 메인 노출 안내</p>
-<p>본 콘텐츠의 저작권은 제공처 또는 네이버에 있으며, 이를 무단 이용하는 경우 저작권법 등에 따라 법적책임을 질 수 있습니다.</p>
-<p><address>Copyright <strong>ⓒ NAVER Corp. </strong>All Right Reserved</address><p/>
-    
-  </div>
+  <div class="botmenu layout1"></div>
 
 
 </body>

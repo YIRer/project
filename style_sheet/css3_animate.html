@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sadf</title>
+    
+    <style type="text/css">
+       /* .box{width: 200px;height: 200px;border:1px red solid; background-color: #f0f;*/
+        
+        /*transition:1000ms;*/
+        /*transition-delay: 2s;*/
+       /* }*/
+
+       /*@keyframes move {*/
+       /*      0% {  margin:0;}*/
+       /*      10% { margin-left:100px; }*/
+       /*      20% { margin-top:100px; margin-left:100px; }*/
+       /*      50% { margin-top:100px; margin-left:0;} */
+       /*      70% { padding:20px;}*/
+       /*      100% { margin:0; padding:0;}*/
+       /* }*/
+        
+       /* .box:hover{animation:move 1s;}*/
+        div {box-sizing:border-box;}
+        .box_mother {width: 500px;height: 600px; position:relative; margin: 0 auto;padding: 0;}
+        .box_mother:hover .box1{animation:box1move 1000ms;}
+        .box_mother:hover .box2{animation:box2move 2000ms ;}
+        .box_mother:hover .box3{animation:box3move 1000ms;}
+        .box_mother:hover .box4{animation:box4move 2000ms ;}
+        .box_mother:hover .box5{animation:box5move 2000ms;}
+        .box_mother:hover .box6{animation:box6move 2000ms ;}
+        .box_mother:hover .box7{animation:box7move 2000ms ;}
+        
+        .box1 {border:3px black solid; width: 100px;height: 100px; position:absolute; top:0; left:0; background-color: #fff;}
+    
+        
+        @keyframes box1move
+         { 
+            0% {  left: 0px;}
+            100% { left:-300px;}
+            
+        }
+        .box2 {border:3px black solid; width: 100px;height: 300px; position:absolute; top:100px; left:0;background-color: #fff;}
+        
+        @keyframes box2move
+         { 
+          0% {
+		transform: scale(0);
+		opacity: 0.0;	}
+	60% {		transform: scale(1.1);	}
+	80% {		transform: scale(0.9);		opacity: 1;		}	
+	100% {		transform: scale(1);		opacity: 1;		}	
+        }
+    
+        .box3 {border:3px black solid; width: 400px;height: 400px; position:absolute; top:0; right:0;background-color: #f00;}
+       
+        @keyframes box3move
+         { 
+            0% {  right: 0px;}
+            50% { right:-300px; top:-300px; transform:rotateX(180deg); background-color: #00f;}
+            100% { right:0px;}
+        }
+    
+        .box4 {border:3px black solid; width: 100px;height: 200px; position:absolute; bottom:0; left:0; background-color: #00f;}
+       
+        @keyframes box4move
+         { 
+            0% {  left: 0px;}
+            35% { left:-300px; bottom:-300px; transform:rotateX(180deg); background-color: yellow;}
+            70% { right:300px; top:300px; transform:rotateY(720deg);}
+            100% { right:0px;}
+        }
+        .box5 {border:3px black solid; width: 325px;height: 200px; position:absolute; bottom:0; left:100px;}
+       
+         @keyframes box5move
+         { 
+            0% {  bottom: 0px;}
+            50% { bottom:-300px; background-color: black;}
+            100% { bottom:0px;}
+        }
+        .box6 {border:3px black solid; width: 75px;height: 75px; position:absolute; bottom:125px; right:0;}
+        
+         @keyframes box6move
+         { 
+            0% {  right: 0px;}
+            50% { right:-300px; border-radius:25px; background-color: black;}
+            100% { right: 0px;}
+        }
+        .box7 {border:3px black solid; width: 75px;height: 125px; position:absolute; bottom:0; right:0; background-color: yellow;}
+       
+         @keyframes box7move
+         { 
+            0% {  bottom:0;}
+            50% { bottom:-100px; transform:scale(1.5,1.2); background-color: black;}
+            100% { bottom:0;}
+        }
+        
+        
+        
+    </style>
+    
+</head>
+<body>
+    
+    
+    
+    <div class="box_mother">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+        <div class="box6"></div>
+        <div class="box7"></div>
+        
+    </div>
+</body>
+</html>

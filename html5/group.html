@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>:: JJ PROJECT ::</title>
+		<style>
+		@import url(https://fonts.googleapis.com/css?family=Oswald);
+			*{margin:0; padding:0;}
+			html, body {height:100%}
+			ul, ol {list-style: none;}
+			
+			
+			body {background-color:#f4f4f4;}
+			.wrapper{
+				height:100%;
+				}
+
+		
+			.wrapper .header .logo a{
+				cursor: pointer;
+				width:104px;
+				height:52px;
+				padding:25px;
+				display:block;
+				background-image: url(../images/logo-sw.png);
+				background-repeat: no-repeat;
+				background-position: center;
+				transition:1s;
+			}
+			.wrapper .header .logo{
+				float:left;
+			}
+			.wrapper .header .nav{
+				float:right;
+			}
+			.wrapper .header .nav ul{
+				font-size:0;
+			}
+			.wrapper .header .nav button{
+				display: none;
+
+			}
+			.wrapper .header .nav li{
+				display: inline-block;
+				font-size: 16px;
+				vertical-align: top;
+				line-height: 100px;
+			}
+			.wrapper .header .nav li a{
+				padding:0 10px;
+				display: block;
+				transition: 0.15s;
+				text-decoration: none;
+				font-size:16px;
+				color:black;
+				font-family: Oswald;
+			}
+			.wrapper .header .nav li a:hover{
+				border-top:3px #99E000 solid;
+				color:#99E000;
+			}
+			.wrapper .header{
+				height:100px;
+				width:100%;
+				padding:0 20px;
+				box-sizing: border-box;
+				position: absolute;
+				left:0;
+				top:0;
+				background-color:rgba(255, 255, 255, 0.2);
+				box-shadow: 0 0.4px 1px #000;
+				transition:1s;
+				z-index:1;
+			}
+
+			.wrapper .logo a:hover{
+				transform: rotateY(180deg);
+			}
+			.footer{
+				width:100%; height:57px;
+				position:fixed;
+				bottom:0;
+				z-index:1;
+				background-color:rgba(0, 0, 0, 0.4);
+			}
+			
+		
+		
+		
+		/*콘텐츠*/
+		
+		.wrapper .section {
+				
+			    position:relative; top:100px; padding:30px 0;}
+			    
+			    
+		.wrapper .section .discogrphy{
+		        width: 100%; height: 60px;
+		        outline:0px red solid;
+				padding-bottom: 20px;
+				background-image:url(../images/discography.png);
+				background-repeat:no-repeat;
+				background-position: top;
+			    position:relative; top:0px;
+			    background-color:#f4f4f4;
+			
+	    	}
+			    
+			    
+		.wrapper .section .content{
+		        padding:50px 0;
+		        height: 100%;
+				outline:0px red solid;
+				position:relative; top:0px;}
+		
+		.cover {max-width:970px;margin:0 auto;}
+		
+		.section .content .cent_cont {outline:0px red solid; display:table; margin:0 auto; position:relative;}
+		
+		.content .cent_cont .lag {height: 31px; outline:px red solid; margin-left:28px; position:absolute; top:0px;}
+		.section .content .left_cont {margin-left: 28px;width: 348px; height: 461px; display:table-cell; position:relative; border:1px #cccccc solid; }
+        .section .content .left_cont li {font-size:11px; }
+        .section .content .left_cont img{width:100%;}
+        
+        .section .content .left_cont button {width: 20px; height: 21px; padding: 5px; border:0; margin: 0 5px 10px 0;}
+        
+        
+        .section .content .right_cont {padding-left: 28px; min-width: 396px; display:table-cell; vertical-align:top;  outline:px red solid; position:relative;
+        	                         box-sizing:border-box;}
+        
+        .content .right_cont .right_cont_head {width:100%; height: 58px; padding-bottom:5px;  display:inline-block; line-height: 58px; vertical-align:middle;
+        	                                   background-image: url(../images/button.png); color:#fff;}
+		
+		
+		
+		.content .right_cont .right_cont_head h2{display:block; width: 112px; height: 58px; float:left; padding-left:15px;	}
+		.content .right_cont .right_cont_head p {display:block; float:right; margin:24px 15px 0 0; font-size:12px; line-height:17px; padding:0;}
+		
+		.content .right_cont h3{
+			font-size:14px; margin:25px 0 10px 0; line-height:20px;}
+	
+		.content .right_cont p{font-size:12px;}
+		
+		.content .album {outline:px red solid; padding: 40px 0 10px; text-align:center;}
+		.content .album img{width: 152px;height: 152px;}
+		.content .album li>button{ width: 9px;height: 9px; border:0 none; background-color: #d8d8d8; border-radius: 50%;}
+		
+		/*-------------------------------------------------------*/
+		.wrapper .cover .lag button{
+			cursor: pointer;
+			color:white;
+			text-decoration:none;
+			font-size:5px;
+			border:0px red solid;
+			border-radius: 50%;
+			margin:0 5px 10px 0;
+			width:20px; height: 21px;
+			background-image: url(../images/button.png);
+		}
+		.wrapper .footer .jyp{
+			background-image: url(../images/jyplogo-w.png);
+			width:115px;
+			height:45px;
+			margin-left:7%;
+			margin-top:5px;
+			display:block;
+			z-index:1;
+		}
+		.wrapper .footer .tw{
+			background-image: url(../images/twitter_bird.png);
+			width:30px; height:30px;
+			float:right;
+			
+		}
+		.wrapper .footer .fb{
+			background-image: url(../images/twitter_bird.png);
+			width:30px; height:30px;
+			float:right;
+		}
+		.wrapper .footer .uv{
+			background-image: url(../images/twitter_bird.png);
+			width:30px; height:30px;
+			float:right;
+		}
+		
+/*868 px*/		
+			@media screen and (max-width:905px){
+			    .section .content .left_cont, .section .content .right_cont{display:block;}
+				.wrapper .header .nav button{
+					display: block;
+					height:60px; border:0 none;
+					width:230px;
+					padding:0 20px;
+					font-size:15px;
+					color:white;
+					background-color: #99E000;
+					cursor:pointer;
+				}
+				.wrapper .header .nav button:hover + ul{
+					display: block;
+				}
+				.wrapper .header .nav ul{
+					display: none;
+					position: absolute;
+					background: rgba(255,255, 255, 0.3);
+					display: block;
+				}
+				.wrapper .header .nav ul li a{
+					color: #99E000;
+					font-weight: bold;
+					margin-right:120px;
+					line-height: 40px;
+				}
+				.wrapper .header .nav li a:hover{
+					border-left:0px #99E000 solid;
+					border-top:3px #99E000 solid;
+					background-color: white;
+
+					width:230px;
+					color:#777;}
+						
+			    
+
+
+			}
+			
+			/*450 px*/
+			@media screen and (max-width:450px){
+				.wrapper .header{
+					height:40px;
+					padding:0;}
+
+				.wrapper .header .logo a{
+					background-size: 39px 38px;
+					padding:0;
+					margin:1px 0 0 7px;}
+
+				.wrapper .header .nav button{
+					display: block;
+					height:40px; border:0 none;
+					width:150px;
+					padding:0 10px;
+					font-size:15px;
+					color:white;
+					background-color: #99E000;
+					cursor:pointer;
+				}
+				.wrapper .header .nav button:hover + ul{
+					display: block;
+				}
+				.wrapper .header .nav ul{
+					display: none;
+					position: absolute;
+					background: rgba(255,255, 255, 0.3);
+					display: block;
+				}
+				.wrapper .header .nav ul li a{
+					color: #99E000;
+					font-weight: bold;
+					margin-right:40px;
+					line-height: 40px;
+				}
+				.wrapper .header .nav li a{
+					transition: 0.15s;
+				}
+				.wrapper .header .nav li a:hover{
+					border-left:3px #99E000 solid;
+					border-top:0px #99E000 solid;
+					background-color: white;
+
+					width:150px;
+					color:#777;
+
+				}
+				
+			
+
+			}
+
+
+
+
+
+
+
+
+
+		</style>
+</head>
+<body>
+
+	<div class="wrapper">
+		<div class="header">
+			<div class="logo">
+				<a href=""></a>
+			</div>
+			<div class="nav">
+				<button>Mainmenu</button>
+				<ul>
+					<li><a href="">PROFILE</a></li>
+					<li><a href="">DISCOGRAPHY</a></li>
+					<li><a href="">GALLERY</a></li>
+					<li><a href="">VIDEO</a></li>
+					<li><a href="">NOTICE</a></li>
+					<li><a href="">SCHEDULE</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="section">
+		    <div class="discogrphy">
+		    </div>
+		   
+		   <div class="content">
+		   <div class="cover">  
+		          <div class="lag">
+			            <button>KR</button>
+			            <button>EN</button>
+			            <button>JP</button>
+			            <button>CH</button>
+			        </div>
+		        <div class="cent_cont">
+		             
+		        <div class="left_cont">
+		           
+			     <img src="../images/down1.jpg" alt=""/></img>
+		        <p>TRACKLIST</p>
+		            <ul>
+			            <li>
+							1. Bounce<br/>
+							2. 꽂혔어<br/>
+							3. 이 노래가 끝나기 전에 (feat. 수지)<br/>
+							4. Bounce (Instrumental)
+						</li>
+					</ul>
+		        </div>
+		        <div class="right_cont">
+		        <div class="right_cont_head">
+		            <h2>Bounce</h2> 
+		            <p>2012-05-20</p>
+		        </div>
+			        <h3>Ready for the world</h3>
+			        <p>
+						JJ Project’의 1st ALBUM 「Bounce」! <br/>
+						JYP엔터테인먼트가 선보이는 신예 듀오 ‘JJ Project’가
+						2012년 5월 20일 첫 앨범을 공개하며 음악 팬들 앞에 모습을 드러낸다. <br/>
+						이번 앨범에는 JJ Project 특유의, 넘치는 에너지와 자유분방함이
+						묻어나는 곡들이 수록되어 있으며 ‘잘 노는 10대’인 멤버들의 통통 튀는 매력을 멋지게 표현하고 있다.</p>
+		        
+		        </div>
+		        </div>
+		        <div class="album">
+		            <ul>
+		                <li>
+		                    <img src="../images/down1.jpg"></img>
+		                    
+		                    <p>Bounce<br />2012-05-20</p>
+		                   
+		                </li>
+		                <li>
+		                    <button></button>
+		                </li>
+		                
+		            </ul>
+		        
+		        
+		        
+		        </div>
+		  </div>
+		   
+		</div>
+		<div class="footer">
+			<div class="jyp"></div>
+			<ul>
+				<li class="tw"></li>
+				<li class="fb"></li>
+				<li class="uv"></li>
+			</ul>
+			
+		</div>
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
