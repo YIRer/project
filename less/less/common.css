@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu {
+  width: 200px;
+  border: 1px #ccc solid;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.menu ul {
+  margin: 20px;
+}
+.menu ul li {
+  border-bottom: 1px #ff0000 solid;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: #ff0000;
+}
+.col-xs {
+  width: 20%;
+}
+.col-ms {
+  width: 50%;
+}
+.col-df {
+  width: 30%;
+}
+.col-lg {
+  width: 80%;
+}
+
+/* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
