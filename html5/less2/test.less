@@ -1,0 +1,82 @@
+// 기본설정
+*{margin:0; padding:0; }
+html,body {height: 100%; overflow:hidden;}
+ul,li{list-style:none;}
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+
+
+
+ // 잔여설정
+
+
+ .warpper {height: 100%; background-image: url(../img/bg-pc.jpg);
+   background-repeat: no-repeat; background-position: top; background-size: cover;
+
+   .header{transition:1s; height: 100px; top:0; background-color: rgba(255,255,255,0.9); padding:0 20px; box-shadow:0px 1px 5px #5e5e5e;
+
+     .mainlogo{display:block; float:left; width: 104px;height: 40px; padding:25px; background-image: url(../img/logo-s.png);
+      background-position: center; background-repeat: no-repeat; transition:1s;&:hover{transform:rotateY(180deg);}
+
+    }
+
+    .list_menu{float:right; .moblie_menu{display: none;}
+     ul{font-size:0;  li{display:inline-block; font-family: Oswald; line-height: 100px; vertical-align: top;
+     a{display:block; padding:0 18px;  font-size:16px; text-decoration: none; color:#1ae9d3; font-weight: 400;&:hover{border-top:3px #ffb0b0 solid;
+      background-color:rgba(255,255,255,0.3); box-sizing:border-box;
+
+     }}
+    }}
+
+   }}
+
+
+   .logo {width: 320px; height: 320px; background-image: url(../img/mainlogo.png); position:relative; top:100px;
+     background-size: cover; background-repeat: no-repeat; transition:1s; margin: 11% 0 0 1%;
+     &:hover{transform:scale(1.3,1.3); opacity:0;}}
+
+   .footer {width: 100%;height: 57px; position: fixed; bottom:0; left:0; background-color:rgba(0,0,0,0.3); text-align: center;
+     .footbox{width: 100%; height: 57px; position:relative;
+       .jyp{position:relative; top:5px; left:7%; float:left; border:1px red solid; width: 115px; height: 45px; background-image: url(../img/jyplogo-w.png);
+         background-size: cover; background-position: center;}
+      .social{float:right;
+        ul{font-size: 0;
+          [class^="flaticon-"]:before{display:inline-block; margin-left: 0; margin-right:10px; font-size:20px; border-radius:5px; padding:2px; background-color: #fff;}
+
+
+        }
+      }
+     }
+   }
+
+
+ }
+//
+// // width: 250px; height: 250px; background-size: 100%; position:relative; margin:9% auto 0; transform:scale(0.78,0.78);&:hover{transform:scale(0.8,0.8);}
+@media screen and (max-width: 720px){
+//
+// // .warpper{background-image: url(../img/bg-720.jpg);}
+// // .warpper .header {height: 40px; padding:0;}
+// // .warpper .header .mainlogo {width: 60px; height: 30px;padding: 0;margin:3px 0 0 10px; background-size:100%}
+// // .warpper .logo {display:none;}
+// // .warpper .header .list_menu .moblie_menu {display:block; width: 150px; height: 40px; font-family: Oswald; font-size: 14px; line-height: 14px; background-color:#08e9d1; border:0 none; text-align: center; color:#fff; padding:10px;}
+// // .warpper .header .list_menu ul{display:block; background-color:rgba(255,255,255,0.5);}
+// // .warpper .header .list_menu ul>li{display:block; width: 100%; line-height: 1; padding:10px 8px;}
+// // .warpper .header .list_menu ul>li>a{font-size: 16px;}
+//
+.warpper{background-image: url(../img/bg-720.jpg);
+  background-size: cover; background-position: center;
+  .header {height: 55px; padding:0;
+    .mainlogo {width: 80px; height: 40px; padding: 0; margin:5px 0 0 0px; background-size:100%}
+    .list_menu {.moblie_menu {display:block; width: 200px; height: 55px; font-family: Oswald; font-size: 14px; line-height: 14px; background-color:#08e9d1; border:0 none; text-align: center; color:#fff; padding:20px 50px;}
+    ul{display:block; background-color:rgba(255,255,255,0.7);
+      li{display:block; font-size:16px; width: 100%; line-height: 1; padding:15px; transition: 100ms;
+        &:hover{border-left:5px #08e9d1 solid;box-sizing:border-box; background-color:rgba(255,255,255,0.9);}
+
+        a{font-size: 16px; padding:0; &:hover{color:#ffb0b0; border:0 none; background: none;}}
+        }}
+  }
+  }
+ .logo {display:none;}
+
+}
+}
