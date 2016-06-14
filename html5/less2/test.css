@@ -97,27 +97,31 @@ li {
   width: 100%;
   height: 57px;
   position: relative;
+  line-height: 57px;
 }
 .warpper .footer .footbox .jyp {
-  position: relative;
-  top: 5px;
-  left: 7%;
   float: left;
-  border: 1px red solid;
+  margin-left: 7%;
+}
+.warpper .footer .footbox .jyp .jyplogo {
+  display: inline-block;
   width: 115px;
-  height: 45px;
+  height: 57px;
   background-image: url(../img/jyplogo-w.png);
-  background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
 }
 .warpper .footer .footbox .social {
   float: right;
+  margin-right: 3%;
 }
 .warpper .footer .footbox .social ul {
   font-size: 0;
 }
-.warpper .footer .footbox .social ul [class^="flaticon-"]:before {
+.warpper .footer .footbox .social ul li {
   display: inline-block;
+}
+.warpper .footer .footbox .social ul li[class^="flaticon"]::before {
   margin-left: 0;
   margin-right: 10px;
   font-size: 20px;
