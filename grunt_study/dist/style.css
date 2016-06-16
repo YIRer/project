@@ -1,0 +1,16 @@
+*{margin: 0;padding: 0;}
+h1{margin: 0; padding: 0;}
+
+ul{list-style: none;}
+img{border:0 none; vertical-align: top;}
+a{text-decoration: none;
+}
+
+.btn {
+  border: 1px red solid;
+  width: 100px;
+  height: 100px;
+}
+.btn span {
+  padding: 20px;
+}
