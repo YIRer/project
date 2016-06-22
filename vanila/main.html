@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nilavanila</title>
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script>
+
+        $(document).ready(function(){
+
+            $('.advertise .advertise_next').click(function(){
+
+                $('.adslide li.on img').animate({
+                    left:"-100%"
+                }).parent()
+                .removeClass('on')
+                .next()
+                .addClass('on')
+                .children('img').css({
+                    display:'block',
+                    left:'100%'
+                }).animate({
+                    left:0
+                })
+
+
+            })
+
+
+
+        })
+
+
+    </script> -->
+
+  <style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  ul,
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  .container {
+    margin: 0 auto;
+    width: 1141px;
+  }
+  .title_table {
+    font-size: 16px;
+    margin: 20px 0 ;
+  }
+  .title_table h2 {
+    font-size: inherit;
+    height: 10px;
+    border-bottom: 1px #666 solid;
+    text-align: center;
+  }
+  .title_table h2 span {
+    background-color: #fff;
+    padding: 0px 20px;
+  }
+
+  [class="-grid-list"] ul li {
+    width: 360px;
+  }
+  [class="-grid-list"] ul li .pho_lg_ls {
+    display: block;
+    width: 100%;
+    height: 230px;
+  }
+  [class="-grid-list"] ul li .pho_lg_ls img {
+    position: relative;
+    width: 100%;
+  }
+  [class="-grid-list"] ul li .list_info {
+    display: block;
+  }
+  [class="-grid-list"] ul li .list_info strong {
+    display: block;
+  }
+  [class="-grid-list"] ul li .list_info small {
+    display: block;
+  }
+
+  .none_margin {
+    margin: 0;
+  }
+  .right_margin {
+    margin-right: 30px;
+  }
+  .advertise {
+    height: 464px;
+    position: relative;
+    outline: 1px red solid;
+    margin-bottom: 25px;
+    overflow: hidden;
+  }
+  .advertise .advertise_pre {
+    width: 26px;
+    height: 47px;
+    border: 0 none;
+    background-image: url(../../dist/img/advertise_pre.png);
+    position: absolute;
+    top: 209px;
+    left: 15px;
+    z-index: 2;
+  }
+  .advertise .advertise_next {
+    width: 26px;
+    height: 47px;
+    border: 0 none;
+    background-image: url(../../dist/img/advertise_next.png);
+    position: absolute;
+    top: 209px;
+    right: 15px;
+    z-index: 2;
+  }
+  .product1_title {
+    height: 50px;
+  }
+
+  .adslide {
+    position: relative;
+    text-align: center;
+  }
+  .adslide li:first-child img {
+    display: block;
+  }
+  .adslide li {
+    display: inline-block;
+  }
+  .adslide li img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+  }
+  .adslide li a {
+    position: relative;
+    top: 443px;
+    border: 1px #FFF solid;
+    border-radius: 50%;
+    z-index: 1;
+    display: block;
+    width: 10px;
+    height: 10px;
+    text-indent: -9999px;
+  }
+  .adslide li.on a {
+    background: #fff;
+  }
+
+
+
+  .box{border:1px;}
+  </style>
+
+
+
+</head>
+<body>
+    <div class="container">
+
+        <div class="advertise">
+            <div class="adslide_box">
+            <button class="advertise_pre"></button>
+            <button class="advertise_next"></button>
+            </div>
+            <div class="adslide">
+                <ul>
+                    <li class="on"><a href=""><span>1</span></a><img src="../../libs/dist/img/@advertise_big.png" alt=""></li>
+                    <li><a href=""><span>2</span></a><img src="../../libs/dist/img/@advertise_big.png" alt=""></li>
+                    <li><a href=""><span>3</span></a><img src="../../libs/dist/img/@advertise_big.png" alt=""></li>
+                    <li><a href=""><span>4</span></a><img src="../../libs/dist/img/@advertise_big.png" alt=""></li>
+                    <li><a href=""><span>5</span></a><img src="../../libs/dist/img/@advertise_big.png" alt=""></li>
+                    <li><a href=""><span>6</span></a><img src="../../libs/dist/img/@advertise_big.png" alt=""></li>
+                    <li><a href=""><span>7</span></a><img src="../../libs/dist/img/@advertise_big.png" alt=""></li>
+                    <li><a href=""><span>7</span></a><img src="../../libs/dist/img/@advertise_big.png" alt=""></li>
+                </ul>
+
+            </div>
+
+
+        </div>
+        <div class="title_table">
+            <h2><span>NILVA'S PICK!</span></h2>
+        </div>
+        <!--<div class="large_list">-->
+        <!--    <button class="pre_arrow"></button>-->
+        <!--    <button class="next_arrow"></button>-->
+        <!--    <ul>-->
+        <!--        <li class="right_margin"><a href=""><img src="../../libs/dist/img/@thumb_nail_large.gif">     -->
+        <!--            <span><strong>MARGARET HOWELL SALE</strong><br />-->
+        <!--            2015 S/S 신상품 한정수량 특가입고 + 10% 쿠폰세</span>-->
+
+        <!--        </a>-->
+
+        <!--        </li>-->
+        <!--        <li class="right_margin"><a href=""><img src="../../libs/dist/img/@thumb_nail_large.gif">-->
+        <!--        <span><strong>MARGARET HOWELL SALE</strong><br />-->
+        <!--        2015 S/S 신상품 한정수량 특가입고 + 10% 쿠폰세</span></a></li>-->
+        <!--        <li class="none_margin"><a href=""><img src="../../libs/dist/img/@thumb_nail_large.gif">-->
+        <!--        <span><strong>MARGARET HOWELL SALE</strong><br />-->
+        <!--        2015 S/S 신상품 한정수량 특가입고 + 10% 쿠폰세</span></a></li>-->
+        <!--        <li class="right_margin"><a href=""><img src="../../libs/dist/img/@thumb_nail_large.gif">-->
+        <!--        <span><strong>MARGARET HOWELL SALE</strong><br />-->
+        <!--        2015 S/S 신상품 한정수량 특가입고 + 10% 쿠폰세</span></a></li>-->
+        <!--        <li class="right_margin"><a href=""><img src="../../libs/dist/img/@thumb_nail_large.gif">-->
+        <!--        <span><strong>MARGARET HOWELL SALE</strong><br />-->
+        <!--        2015 S/S 신상품 한정수량 특가입고 + 10% 쿠폰세</span></a></li>-->
+        <!--        <li class="none_margin"><a href=""><img src="../../libs/dist/img/@thumb_nail_large.gif">-->
+        <!--        <span><strong>MARGARET HOWELL SALE</strong><br />-->
+        <!--        2015 S/S 신상품 한정수량 특가입고 + 10% 쿠폰세</span></a></li>-->
+        <!--    </ul>-->
+
+
+        <!--</div>-->
+        <div class="large_list-grid-list">
+            <ul>
+
+                <li>
+                <span class="pho_lg_ls"><img src="../../libs/dist/img/@thumb_nail_large.gif" alt=""></span>
+                <span class="list_info">
+                    <strong>MARGARET HOWELL SALE</strong>
+                    <small>2015 S/S 신상품 한정수량 특가입고 + 10% 쿠폰세일</small>
+                </span>
+
+                </li>
+                  <li>
+                <span class="pho_lg_ls"><img src="../../libs/dist/img/@thumb_nail_large.gif" alt=""></span>
+                <span class="list_info">
+                    <strong>MARGARET HOWELL SALE</strong>
+                    <small>2015 S/S 신상품 한정수량 특가입고 + 10% 쿠폰세일</small>
+                </span>
+
+                </li>
+
+
+            </ul>
+        </div>
+
+         <div class="title_table">
+            <h2><span>TOP SELLER</span></h2>
+        </div>
+        <div class="small-grid-list">
+                  <ul>
+
+                <li>
+                <span class="pho_lg_ls"><img src="../../libs/dist/img/@thumb_nail_large.gif" alt=""></span>
+                <span class="list_info">
+                        <strong>sdfsafsdfWELL SALE</strong>
+                            <small>2015 S/S 신상품 한정수량 특가입고 + 10% 쿠폰세일</small>
+                            <del>200,000원</del>
+                            <int>190,000원</int>
+                </span>
+
+                </li>
+
+
+            </ul>
+
+            <!--<button class="pre_arrow"></button>-->
+            <!--<button class="next_arrow"></button>-->
+            <!--<ul>-->
+            <!--    <li class="right_margin"><a href=""><img src="../../libs/dist/img/@thumb_nail_large.gif">     -->
+            <!--        <span><strong>MARGARET HOWELL SALE</strong><br />-->
+            <!--        2015 S/S 신상품 한정수량 특가입고 + 10% 쿠폰세</span>-->
+
+            <!--    </a>-->
+
+            <!--    </li>-->
+            <!--    <li class="right_margin"><a href=""><img src="../../libs/dist/img/@thumb_nail_large.gif">-->
+            <!--    <span><strong>MARGARET HOWELL SALE</strong><br />-->
+            <!--    2015 S/S 신상품 한정수량 특가입고 + 10% 쿠폰세</span></a></li>-->
+            <!--    <li class="none_margin"><a href=""><img src="../../libs/dist/img/@thumb_nail_large.gif">-->
+            <!--    <span><strong>MARGARET HOWELL SALE</strong><br />-->
+            <!--    2015 S/S 신상품 한정수량 특가입고 + 10% 쿠폰세</span></a></li>-->
+            <!--    <li class="right_margin"><a href=""><img src="../../libs/dist/img/@thumb_nail_large.gif">-->
+            <!--    <span><strong>MARGARET HOWELL SALE</strong><br />-->
+            <!--    2015 S/S 신상품 한정수량 특가입고 + 10% 쿠폰세</span></a></li>-->
+            <!--    <li class="right_margin"><a href=""><img src="../../libs/dist/img/@thumb_nail_large.gif">-->
+            <!--    <span><strong>MARGARET HOWELL SALE</strong><br />-->
+            <!--    2015 S/S 신상품 한정수량 특가입고 + 10% 쿠폰세</span></a></li>-->
+            <!--    <li class="none_margin"><a href=""><img src="../../libs/dist/img/@thumb_nail_large.gif">-->
+            <!--    <span><strong>MARGARET HOWELL SALE</strong><br />-->
+            <!--    2015 S/S 신상품 한정수량 특가입고 + 10% 쿠폰세</span></a></li>-->
+            <!--</ul>-->
+
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+</body>
+</html>
